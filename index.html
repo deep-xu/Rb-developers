@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB Developers | Premium Construction & Interior in Bangalore</title>
+    <meta name="description" content="Rahman Bros Construction & Interior Private Limited. Premium home construction, interior design, and turnkey projects. Luxury you deserve.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="RB Developers | Luxury Construction & Interior">
+    <meta property="og:description" content="Premium home construction, interior design, and turnkey projects in Bangalore.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/RB_logo.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Loading Screen -->
+    <div class="loader-container" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo-wrapper">
+                <img src="assets/RB_logo.png" alt="RB Developers Logo" class="loader-logo-img">
+                <div class="loader-ring"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="https://wa.me/910000000000" class="float-btn whatsapp" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:+910000000000" class="float-btn call" aria-label="Call Now">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="#contact" class="float-btn quote">
+            <span>GET QUOTE</span>
+        </a>
+    </div>
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/RB_logo.png" alt="RB Developers Logo" class="logo-img">
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <div class="mobile-menu-logo">
+                    <img src="assets/RB_logo.png" alt="RB Developers Logo">
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#packages" class="nav-link">Packages</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Animated Background Slider -->
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+        </div>
+        
+        <!-- Golden Particles Canvas -->
+        <canvas id="hero-particles"></canvas>
+        
+        <!-- Glass Reflection Sweep -->
+        <div class="glass-sweep"></div>
+        
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal-text">
+
+                <p class="hero-subtitle glow-text">RAHMAN BROS CONSTRUCTION & INTERIOR</p>
+                <h1 class="hero-title">Crafting <span class="text-gold">Luxury</span><br>Living Spaces</h1>
+                <p class="hero-desc">Experience unparalleled architectural elegance and premium construction tailored to perfection.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary btn-hover-effect glass-btn">Explore Projects</a>
+                    <a href="#contact" class="btn btn-outline btn-hover-effect glass-btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="text">Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img-wrapper reveal-left">
+                    <div class="about-img main-img"></div>
+                    <div class="about-img sub-img"></div>
+                    <div class="experience-badge glass-card">
+                        <span class="number count" data-target="15">0</span>
+                        <span class="text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <div class="section-header">
+                        <h4 class="section-subtitle">ABOUT RB DEVELOPERS</h4>
+                        <h2 class="section-title">Building Visions With <span class="text-gold">Precision</span></h2>
+                    </div>
+                    <p class="about-desc">RB Developers Private Limited (Rahman Bros Construction & Interior) is synonymous with luxury, quality, and architectural brilliance. We transform dreams into concrete realities, creating premium living spaces that reflect elegance and modernity.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle text-gold"></i> Premium Quality Materials</li>
+                        <li><i class="fas fa-check-circle text-gold"></i> Expert Architectural Design</li>
+                        <li><i class="fas fa-check-circle text-gold"></i> Timely Project Delivery</li>
+                        <li><i class="fas fa-check-circle text-gold"></i> Transparent Pricing</li>
+                    </ul>
+                    <a href="#services" class="btn btn-primary btn-hover-effect mt-4">Discover Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section-padding bg-darker">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">WHY CHOOSE US</h4>
+                <h2 class="section-title">The RB Developers <span class="text-gold">Advantage</span></h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Luxury First</h3>
+                    <p>We don't just build homes; we craft luxury lifestyles with unparalleled attention to detail.</p>
+                </div>
+                <div class="feature-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="feature-icon"><i class="fas fa-hard-hat"></i></div>
+                    <h3>Expert Team</h3>
+                    <p>Our team comprises seasoned architects, engineers, and visionary interior designers.</p>
+                </div>
+                <div class="feature-card glass-card reveal-up" style="transition-delay: 0.3s;">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Modern Design</h3>
+                    <p>Embracing contemporary architecture while maintaining timeless elegance.</p>
+                </div>
+                <div class="feature-card glass-card reveal-up" style="transition-delay: 0.4s;">
+                    <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>End-to-End Solutions</h3>
+                    <p>From conceptualization to the final key handover, we manage everything seamlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">OUR EXPERTISE</h4>
+                <h2 class="section-title">Premium <span class="text-gold">Services</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal-up">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-home"></i></div>
+                        <h3>Home Construction</h3>
+                        <p>Bespoke residential construction with premium grade materials and structural integrity.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-couch"></i></div>
+                        <h3>Interior Design</h3>
+                        <p>Luxury interior solutions that perfectly blend aesthetics, comfort, and functionality.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-key"></i></div>
+                        <h3>Turnkey Projects</h3>
+                        <p>Complete project management from architectural layout to the final luxury finish.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card reveal-up">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Renovation</h3>
+                        <p>Transforming existing spaces into modern, high-end luxury environments.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-building"></i></div>
+                        <h3>Commercial Construction</h3>
+                        <p>State-of-the-art commercial buildings designed for success and prominence.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
+                        <h3>Architecture Design</h3>
+                        <p>Visionary architectural planning focusing on innovation and structural elegance.</p>
+                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages section-padding bg-darker" id="packages">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">INVEST IN QUALITY</h4>
+                <h2 class="section-title">Construction <span class="text-gold">Packages</span></h2>
+                <p class="section-desc">Transparent pricing with no hidden costs. Choose the perfect tier for your dream home.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="packages-grid">
+                <!-- Basic -->
+                <div class="package-card glass-card reveal-up">
+                    <div class="package-header">
+                        <h3 class="package-title">Basic</h3>
+                        <div class="package-price">₹1,900<span>/sq.ft</span></div>
+                        <p class="package-gst">Including GST</p>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 2D Layout & 3D Elevation</li>
+                            <li><i class="fas fa-check"></i> Structural Design</li>
+                            <li><i class="fas fa-check"></i> Sunvik/Prime Gold Steel</li>
+                            <li><i class="fas fa-check"></i> Dalmia/Bharathi Cement</li>
+                            <li><i class="fas fa-check"></i> Tiles upto ₹50/sq.ft</li>
+                            <li><i class="fas fa-check"></i> Sanitaryware worth ₹30,000</li>
+                            <li><i class="fas fa-check"></i> Aluminium Windows</li>
+                            <li><i class="fas fa-check"></i> Finolex Wiring & Legrand Switches</li>
+                        </ul>
+                    </div>
+                    <div class="package-footer">
+                        <a href="#contact" class="btn btn-outline w-100">Select Plan</a>
+                    </div>
+                </div>
+
+                <!-- Classic -->
+                <div class="package-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                    <div class="package-badge">Popular</div>
+                    <div class="package-header">
+                        <h3 class="package-title">Classic</h3>
+                        <div class="package-price">₹2,030<span>/sq.ft</span></div>
+                        <p class="package-gst">Including GST</p>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Everything in Basic +</li>
+                            <li><i class="fas fa-check"></i> MEP Drawings</li>
+                            <li><i class="fas fa-check"></i> Jindal Steel</li>
+                            <li><i class="fas fa-check"></i> Premium Aluminium Windows</li>
+                            <li><i class="fas fa-check"></i> Premium Doors & Fittings</li>
+                            <li><i class="fas fa-check"></i> UPS Provision</li>
+                            <li><i class="fas fa-check"></i> 1500L OH Tank & 6000L Sump</li>
+                        </ul>
+                    </div>
+                    <div class="package-footer">
+                        <a href="#contact" class="btn btn-outline w-100">Select Plan</a>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="package-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                    <div class="package-header">
+                        <h3 class="package-title">Premium</h3>
+                        <div class="package-price">₹2,350<span>/sq.ft</span></div>
+                        <p class="package-gst">Including GST</p>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Everything in Classic +</li>
+                            <li><i class="fas fa-check"></i> Premium Kitchen Setup</li>
+                            <li><i class="fas fa-check"></i> Granite/Marble Flooring</li>
+                            <li><i class="fas fa-check"></i> Premium Bathroom Fittings</li>
+                            <li><i class="fas fa-check"></i> Legrand Mylinc Switches</li>
+                            <li><i class="fas fa-check"></i> Premium Railings</li>
+                            <li><i class="fas fa-check"></i> Larger Water Storage</li>
+                        </ul>
+                    </div>
+                    <div class="package-footer">
+                        <a href="#contact" class="btn btn-outline w-100">Select Plan</a>
+                    </div>
+                </div>
+
+                <!-- Luxury -->
+                <div class="package-card glass-card package-luxury reveal-up" style="transition-delay: 0.3s;">
+                    <div class="gold-glow"></div>
+                    <div class="package-header">
+                        <h3 class="package-title text-gold">Luxury</h3>
+                        <div class="package-price">₹2,585+<span>/sq.ft</span></div>
+                        <p class="package-gst">Including GST</p>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-star text-gold"></i> Everything in Premium +</li>
+                            <li><i class="fas fa-star text-gold"></i> Furniture Layout Plan</li>
+                            <li><i class="fas fa-star text-gold"></i> Luxury Kitchen Setup</li>
+                            <li><i class="fas fa-star text-gold"></i> Designer Bathrooms</li>
+                            <li><i class="fas fa-star text-gold"></i> Legrand Myrius Switches</li>
+                            <li><i class="fas fa-star text-gold"></i> Luxury Finishes & Materials</li>
+                            <li><i class="fas fa-star text-gold"></i> Complete Furniture Planning</li>
+                        </ul>
+                    </div>
+                    <div class="package-footer">
+                        <a href="#contact" class="btn btn-primary btn-gold w-100">Consult Expert</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">OUR PROCESS</h4>
+                <h2 class="section-title">The Path to <span class="text-gold">Perfection</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot">1</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Consultation & Site Visit</h3>
+                        <p>Understanding your vision and assessing the location to provide tailored solutions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot">2</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Design & Architecture</h3>
+                        <p>Creating comprehensive 2D layouts, 3D elevations, and structural drawings.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot">3</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Approval & Planning</h3>
+                        <p>Finalizing designs, material selection, and obtaining necessary municipal approvals.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot">4</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Construction Phase</h3>
+                        <p>Executing the build with premium materials under strict quality supervision.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot">5</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Interior & Finishing</h3>
+                        <p>Applying luxury finishes, custom carpentry, and high-end fittings.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot">6</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Final Handover</h3>
+                        <p>Detailed quality check and handing over the keys to your dream space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="gallery section-padding bg-darker" id="projects">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">OUR PORTFOLIO</h4>
+                <h2 class="section-title">Project <span class="text-gold">Showcase</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-up">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Villa">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Modern Luxury Villa</h3>
+                            <p>Architecture & Construction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-up" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Premium Interior">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Premium Living Space</h3>
+                            <p>Interior Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-up" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Contemporary House">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Contemporary Residence</h3>
+                            <p>Turnkey Project</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-up">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Kitchen">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Designer Kitchen</h3>
+                            <p>Interior Renovation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-up" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Master Bedroom">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Master Suite</h3>
+                            <p>Luxury Interior</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-up" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Exterior Facade">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Classic Elevation</h3>
+                            <p>Architecture Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-primary btn-hover-effect">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Section -->
+    <section class="before-after section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">TRANSFORMATIONS</h4>
+                <h2 class="section-title">Before & <span class="text-gold">After</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="ba-container reveal-up">
+                <div class="ba-image-wrapper">
+                    <img src="assets/after.png" alt="After Renovation" class="ba-after">
+                    <img src="assets/before.png" alt="Before Construction" class="ba-before">
+                    <div class="ba-slider">
+                        <div class="ba-slider-button"><i class="fas fa-arrows-alt-h"></i></div>
+                    </div>
+                </div>
+                <div class="ba-labels">
+                    <span class="label-before">Before Renovation</span>
+                    <span class="label-after text-gold">After RB Developers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="statistics section-padding bg-darker parallax-stats">
+        <div class="stats-overlay"></div>
+        <div class="container relative">
+            <div class="stats-grid">
+                <div class="stat-item glass-card reveal-up">
+                    <i class="fas fa-home stat-icon text-gold"></i>
+                    <h3 class="stat-number"><span class="count" data-target="150">0</span>+</h3>
+                    <p class="stat-text">Projects Completed</p>
+                </div>
+                <div class="stat-item glass-card reveal-up" style="transition-delay: 0.1s;">
+                    <i class="fas fa-smile stat-icon text-gold"></i>
+                    <h3 class="stat-number"><span class="count" data-target="100">0</span>%</h3>
+                    <p class="stat-text">Client Satisfaction</p>
+                </div>
+                <div class="stat-item glass-card reveal-up" style="transition-delay: 0.2s;">
+                    <i class="fas fa-tools stat-icon text-gold"></i>
+                    <h3 class="stat-number"><span class="count" data-target="15">0</span>+</h3>
+                    <p class="stat-text">Years Experience</p>
+                </div>
+                <div class="stat-item glass-card reveal-up" style="transition-delay: 0.3s;">
+                    <i class="fas fa-award stat-icon text-gold"></i>
+                    <h3 class="stat-number"><span class="count" data-target="25">0</span>+</h3>
+                    <p class="stat-text">Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">CLIENT STORIES</h4>
+                <h2 class="section-title">Words of <span class="text-gold">Trust</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card glass-card reveal-up">
+                    <i class="fas fa-quote-left quote-icon text-gold"></i>
+                    <p class="testimonial-text">"RB Developers transformed our vision into reality. The attention to detail in their luxury package is simply unmatched. Highly professional team."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg');"></div>
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Luxury Villa Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                    <i class="fas fa-quote-left quote-icon text-gold"></i>
+                    <p class="testimonial-text">"The interior design work they did for our apartment in Bangalore is breathtaking. They perfectly blended modern aesthetics with functionality."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg');"></div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Interior Project</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                    <i class="fas fa-quote-left quote-icon text-gold"></i>
+                    <p class="testimonial-text">"From laying the foundation to handing over the keys, the transparency and quality of construction were phenomenal. Worth every penny."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/67.jpg');"></div>
+                        <div class="author-info">
+                            <h4>Amit Patel</h4>
+                            <p>Turnkey Project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section-padding bg-darker">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <h4 class="section-subtitle">KNOWLEDGE BASE</h4>
+                <h2 class="section-title">Frequently Asked <span class="text-gold">Questions</span></h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="faq-container reveal-up">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide end-to-end turnkey solutions?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we handle everything from architectural design, municipal approvals, construction, to luxury interior finishing. You just have to turn the key and move in.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are your package prices fixed?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our package prices are transparent and mostly fixed based on the specifications. However, any custom changes or upgrades in materials will be accommodated with clear revised costings.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the typical timeline for a residential project?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A standard residential construction project takes about 8-12 months from foundation to handover, depending on the scale and complexity of the luxury finishes involved.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Where is your office located?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our main office is located at Plot No. 29, 4th Cross, Ex-Service Men Layout, Gunjurpalya, Bangalore - 560087.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info glass-card reveal-left">
+                    <h4 class="section-subtitle">GET IN TOUCH</h4>
+                    <h2 class="section-title mb-4">Start Your <span class="text-gold">Journey</span></h2>
+                    <p class="contact-desc">Ready to build your dream space? Contact our experts for a detailed consultation.</p>
+                    <br></br>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Plot No. 29, 4th Cross,<br>Ex-Service Men Layout,<br>Gunjurpalya, Bangalore - 560087</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:contactrbdevelopers@gmail.com" class="text-white hover-gold">contactrbdevelopers@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+910000000000" class="text-white hover-gold">+91 00000 00000</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper glass-card reveal-right">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="mb-4">Request a Quote</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" required placeholder=" ">
+                            <label for="name" class="form-label">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" required placeholder=" ">
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" class="form-control" required placeholder=" ">
+                            <label for="phone" class="form-label">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" class="form-control" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="construction">Home Construction</option>
+                                <option value="interior">Interior Design</option>
+                                <option value="turnkey">Turnkey Project</option>
+                                <option value="commercial">Commercial Construction</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" rows="4" required placeholder=" "></textarea>
+                            <label for="message" class="form-label">Your Requirements</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-hover-effect w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top section-padding">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-widget reveal-up">
+                        <img src="assets/RB_logo.png" alt="RB Developers Logo" class="footer-logo">
+                        <p class="footer-desc">RAHMAN BROS CONSTRUCTION & INTERIOR PVT LTD. Delivering premium luxury construction and bespoke interior designs in Bangalore.</p>
+                    </div>
+                    
+                    <div class="footer-widget reveal-up" style="transition-delay: 0.1s;">
+                        <h4 class="widget-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Our Services</a></li>
+                            <li><a href="#packages">Pricing Packages</a></li>
+                            <li><a href="#projects">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-widget reveal-up" style="transition-delay: 0.2s;">
+                        <h4 class="widget-title">Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Home Construction</a></li>
+                            <li><a href="#">Interior Design</a></li>
+                            <li><a href="#">Turnkey Projects</a></li>
+                            <li><a href="#">Commercial Build</a></li>
+                            <li><a href="#">Architecture</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-widget reveal-up" style="transition-delay: 0.3s;">
+                        <h4 class="widget-title">Newsletter</h4>
+                        <p class="footer-desc">Subscribe to our newsletter for the latest projects and updates.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p>&copy; 2026 RB Developers Pvt Ltd. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
